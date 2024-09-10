@@ -3,21 +3,18 @@
     'name': "dh_powerbi",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+        Power BI integration with Odoo API 
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'description': """
+        Power BI integration with Odoo API using API key authentication
+    """,
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/13.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'author': "dinoherlambang",
+    'website': "http://www.github.com/dinoherlambang",
+
+    'category': 'Tools',
+    'version': '13.0.1.0.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -25,11 +22,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
+        'views/res_users_views.xml',  # Add this line
+      
     ],
 }
